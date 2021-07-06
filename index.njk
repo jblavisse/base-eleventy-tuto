@@ -1,5 +1,11 @@
 ---
 title: Bienvenue sur mon site qui tue
+navLinks:
+    - Accueil
+    - Services
+    - Contact
+    - A propos
+    - CGU
 dishes:
     - Pizza
     - Jambon 
@@ -15,6 +21,12 @@ dishes:
     <title>Document</title>
 </head>
 <body>
+    <nav>
+    {% for navLink in navLinks %}
+        <a href="">{{navLink}}</a>
+    {% endfor %}
+    </nav>
+    
     <h1>{{title}}</h1>
 
     <ul>
